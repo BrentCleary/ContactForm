@@ -16,99 +16,49 @@
 
 <body class="d-flex flex-column h-100">
 
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 3</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-    <main class="flex-shrink-0">
-      <div class="container text-center">
-        <div class="bg-primary">
-          <div>Contact Me</div>
-          <div class="row bg-light border border-info p-1">
-
-            <div class="col-6">
-              <div class="d-flex justify-content-start">
-                <p>First Name</p>
-              </div>
-              <div class="">
-                <input class="input-field rounded border border-secondary w-100" type="text" placeholder="First Name">
-              </div>
+    <div class="container mt-5">
+      <h1 class="text-center text-light">Contact Me</h1>
+      <div class="border border-2 border-info shadow-lg p-2 bg-light">
+        <form action="#">
+          <div class="row">
+            <div class="col">
+              <label class="form-label">First Name</label>
+              <input type="text" name="firstName" class="form-control" placeholder="First Name" aria-label="First Name" required></input>
             </div>
-
-            <div class="col-6">
-              <div class="d-flex justify-content-start">
-                <p>Last Name</p>
-              </div>
-              <div class="">
-                <input class="input-field rounded border border-secondary w-100" type="text" placeholder="Last Name">
-              </div>
-            </div>
-
-            <div class="col-6">
-              <div class="d-flex justify-content-start">
-                <p>Email</p>
-              </div>
-              <div class="">
-                <input class="input-field rounded border border-secondary w-100" type="text" placeholder="Email">
-              </div>
-            </div>
-
-            <div class="col-6">
-              <div class="d-flex justify-content-start">
-                <p>Phone (optional)</p>
-              </div>
-              <div class="">
-                <input class="input-field rounded border border-secondary w-100" type="text" placeholder="Phone">
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="d-flex justify-content-start">
-                <p>Subject</p>
-              </div>
-              <div class="">
-                <input class="input-field rounded border border-secondary w-100" type="text" placeholder="Subject">
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="d-flex justify-content-start">
-                <p>Message</p>
-              </div>
-              <div class="">
-                <textarea class="input-field-message-box rounded border border-secondary w-100" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-              </div>
-            </div>
-            <div>
-              <button class="d-flex justify-content-start btn btn-primary">Submit</button>
+            <div class="col">
+              <label class="form-label">Last Name</label>
+              <input type="text" name="lastName" class="form-control" placeholder="Last Name" aria-label="Last Name" required></input>
             </div>
           </div>
-        </div>
-
+          <div class="row">
+            <div class="col">
+              <label class="form-label">Email</label>
+              <input type="text" name="email" class="form-control" placeholder="Email" aria-label="Email" required></input>
+            </div>
+            <div class="col">
+              <label class="form-label">Phone (optional)</label>
+              <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone"></input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label class="form-label">Subject</label>
+              <input class="form-control" name="subject" type="text" placeholder="Subject" aria-label="Subject" required></input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" name="message" id="" cols="30" rows="5" placeholder="Message" aria-label="Message"></textarea>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-primary mt-2" type="submit">Submit</button>
+          </div>
+        </form>
       </div>
-    </main>
+    </div>
+
     <footer class="footer mt-auto py-3 bg-light sticky-footer">
         <div class="container-fluid text-center">
             <span class="text-muted">Place sticky footer content here.</span>
